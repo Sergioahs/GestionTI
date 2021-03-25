@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/calculadora" 
+    xmlns:tns="http://www.example.org/calculadora" elementFormDefault="qualified">
+
+    <element name="SumarRequest">
+        <complexType>
+            <sequence>
+                <element name="a" type="string"></element>
+                <element name="b" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="RestarRequest">
+        <complexType>
+            <sequence>
+                <element name="a" type="string"></element>
+                <element name="b" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="SumarResponse">
+        <complexType>
+            <sequence>
+                <element name="resultado" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="RestarResponse">
+        <complexType>
+            <sequence>
+                <element name="resultado" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
